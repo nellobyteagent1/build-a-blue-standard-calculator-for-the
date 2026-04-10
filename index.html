@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blue Calculator</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<main class="calculator" role="application" aria-label="Calculator">
+  <div class="display" aria-live="polite">
+    <div class="display-expr" id="expr"></div>
+    <div class="display-value" id="value">0</div>
+  </div>
+
+  <div class="keys">
+    <button class="btn-fn" aria-label="Clear" data-action="clear">AC</button>
+    <button class="btn-fn" aria-label="Backspace" data-action="backspace">⌫</button>
+    <button class="btn-fn" aria-label="Percent" data-action="percent">%</button>
+    <button class="btn-op" aria-label="Divide" data-action="op" data-op="÷">÷</button>
+
+    <button class="btn-num" data-action="digit" data-digit="7">7</button>
+    <button class="btn-num" data-action="digit" data-digit="8">8</button>
+    <button class="btn-num" data-action="digit" data-digit="9">9</button>
+    <button class="btn-op" aria-label="Multiply" data-action="op" data-op="×">×</button>
+
+    <button class="btn-num" data-action="digit" data-digit="4">4</button>
+    <button class="btn-num" data-action="digit" data-digit="5">5</button>
+    <button class="btn-num" data-action="digit" data-digit="6">6</button>
+    <button class="btn-op" aria-label="Subtract" data-action="op" data-op="−">−</button>
+
+    <button class="btn-num" data-action="digit" data-digit="1">1</button>
+    <button class="btn-num" data-action="digit" data-digit="2">2</button>
+    <button class="btn-num" data-action="digit" data-digit="3">3</button>
+    <button class="btn-op" aria-label="Add" data-action="op" data-op="+">+</button>
+
+    <button class="btn-num span-2" data-action="digit" data-digit="0">0</button>
+    <button class="btn-num" data-action="decimal">.</button>
+    <button class="btn-eq" aria-label="Equals" data-action="equals">=</button>
+  </div>
+</main>
+
+<script src="calculator.js"></script>
+</body>
+</html>
